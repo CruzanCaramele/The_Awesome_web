@@ -1,4 +1,4 @@
-# Project 1: Lightbox
+# Project Lightbox
 
 Simple photo gallery app, using the Lightbox library.
 
