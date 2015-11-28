@@ -10,10 +10,14 @@ $(".question").click(function() {
 	$(this).next().slideToggle("slow");
 	$(this).children().toggleClass("collapse");
 
+	if ("#brythonVsJs") {
 	$("#brythonVsJs").animate({
 		  height: "toggle",
 		  opacity: "toggle"
-	}, 20000);
+	}, 20000);		
+	};
+
+
 
 	
 
