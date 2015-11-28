@@ -2,12 +2,29 @@
 // upon click, slide down the answer
 $(".question").click(function() {
 
+	// $(this).next().animate({
+	// 	 opacity: "show"
+	
+	// }).slideToggle("slow");
+
 	$(this).next().slideToggle("slow");
 	$(this).children().toggleClass("collapse");
 
+	$("#brythonVsJs").animate({
+		  height: "toggle",
+		  opacity: "toggle"
+	}, 20000);
+
+	
+
+
+
+
+
+
 	// $("#a1").slideToggle("slow");
 	// $("#arrow1-down, #arrow1-up").toggleClass("collapse");
-})
+});
 
 // $("#q2").click(function() {
 // 	$("#a2").slideToggle("slow");
