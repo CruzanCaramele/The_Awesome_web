@@ -125,7 +125,7 @@ body:after {
 }
 
 .lb-nav a.lb-next {
-  width: 64%;
+  width: 34%;
   right: 0;
   float: right;
   background: url(../images/next.png) right 48% no-repeat;
