@@ -8,7 +8,7 @@ jQuery: http://jquery.com/
 
 Lightbox: http://lokeshdhakar.com/projects/lightbox2/
 
-## Challenge
+## Modify Yourself
 
 * Choose 6 photos from Google (or your personal library) and replace the current images in your project
 * Replace the header text to something relevant to your new photos
