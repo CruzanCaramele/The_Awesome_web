@@ -10,6 +10,6 @@ Lightbox: http://lokeshdhakar.com/projects/lightbox2/
 
 ## Modify Yourself
 
-* Choose 6 photos from Google (or your personal library) and replace the current images in your project
+* Replace the current images in the project within the assests folder
 * Replace the header text to something relevant to your new photos
-* Add one more option that Lightbox provides
+* Add one more option that Lightbox provides from [Lightbox options](http://lokeshdhakar.com/projects/lightbox2/#options)
