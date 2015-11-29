@@ -7,6 +7,6 @@ $(document).ready(function () {
 		var item = $("#todo-list-item").val();
 
 		// append item insde the unordered list as a list
-		$("#list-items").append("<li></li>" + item + "<li></li>");
+		$("#list-items").append("<li><input type='checkbox' />" + item + "<a class='remove'>x</a><hr></li>");
 	});
 });
