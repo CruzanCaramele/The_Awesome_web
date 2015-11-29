@@ -1,3 +1,12 @@
 $(document).ready(function () {
-    // YOUR CODE HERE!
+
+	$(".add-items").submit(function(event) {
+		event.preventDefault();
+		
+		// obtain the vaue of the item entered
+		var item = $("#todo-list-item").val();
+
+		// append item insde the unordered list as a list
+		$("#list-items").append("<li></li>" + item + "<li></li>");
+	});
 });
