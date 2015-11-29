@@ -8,5 +8,8 @@ $(document).ready(function () {
 
 		// append item insde the unordered list as a list
 		$("#list-items").append("<li><input type='checkbox' />" + item + "<a class='remove'>x</a><hr></li>");
+
+		// clear values after appending
+		$("#todo-list-item").val("");
 	});
 });
