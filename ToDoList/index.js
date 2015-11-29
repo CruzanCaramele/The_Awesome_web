@@ -6,10 +6,14 @@ $(document).ready(function () {
 		// obtain the vaue of the item entered
 		var item = $("#todo-list-item").val();
 
-		// append item insde the unordered list as a list
-		$("#list-items").append("<li><input type='checkbox' />" + item + "<a class='remove'>x</a><hr></li>");
+		// add item only if not empty
+		if (item) {
 
-		// clear values after appending
-		$("#todo-list-item").val("");
+			// append item insde the unordered list as a list
+			$("#list-items").append("<li><input type='checkbox' />" + item + "<a class='remove'>x</a><hr></li>");
+
+			// clear values after appending
+			$("#todo-list-item").val("");	
+		};
 	});
 });
