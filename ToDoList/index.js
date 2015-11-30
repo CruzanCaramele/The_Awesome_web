@@ -10,10 +10,18 @@ $(document).ready(function () {
 		if (item) {
 
 			// append item insde the unordered list as a list
-			$("#list-items").append("<li><input type='checkbox' />" + item + "<a class='remove'>x</a><hr></li>");
+			$("#list-items").append("<li><input class='checkbox' type='checkbox' />" + item + "<a class='remove'>x</a><hr></li>");
 
 			// clear values after appending
 			$("#todo-list-item").val("");	
 		};
 	});
+
+	// $(".checkbox").change(function() {
+
+	// })
+	
+	$(document).on("change", ".checkbox", function() {
+		$(this).parent().toggleClass("completed");
+	})
 });
