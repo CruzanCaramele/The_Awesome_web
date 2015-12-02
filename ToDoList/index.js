@@ -23,5 +23,9 @@ $(document).ready(function () {
 	
 	$(document).on("change", ".checkbox", function() {
 		$(this).parent().toggleClass("completed");
-	})
+	});
+
+	$(document).on("click", ".remove", function() {
+		$(this).parent().remove();
+	});
 });
