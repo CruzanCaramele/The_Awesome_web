@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+	// retrieve value of persisted data
+	$("#list-items").html(localStorage.getItem("listItems"));
+
 	$(".add-items").submit(function(event) {
 		event.preventDefault();
 		
@@ -11,6 +14,9 @@ $(document).ready(function () {
 
 			// append item insde the unordered list as a list
 			$("#list-items").append("<li><input class='checkbox' type='checkbox' />" + item + "<a class='remove'>x</a><hr></li>");
+
+			// persist the list data on local storage
+			localStorage.setItem("listItems", $("#list-items").html());
 
 			// clear values after appending
 			$("#todo-list-item").val("");	
