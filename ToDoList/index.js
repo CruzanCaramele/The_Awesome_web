@@ -1,4 +1,4 @@
-$(document).ready(function () {
+ $(document).ready(function () {
 
 	// retrieve value of persisted data
 	$("#list-items").html(localStorage.getItem("listItems"));
@@ -28,10 +28,21 @@ $(document).ready(function () {
 	// })
 	
 	$(document).on("change", ".checkbox", function() {
+		
+		if ($(this).attr("checked")) {
+
+			$(this).removeAttr("checked");
+		} else {
+
+			$(this).attr("checked", "checked");
+		}
+
 		$(this).parent().toggleClass("completed");
+		localStorage.setItem("listItems", $("#list-items").html());
 	});
 
 	$(document).on("click", ".remove", function() {
 		$(this).parent().remove();
+		localStorage.setItem("listItems", $("#list-items").html());
 	});
 });
