@@ -42,7 +42,10 @@
 	});
 
 	$(document).on("click", ".remove", function() {
-		$(this).parent().remove();
-		localStorage.setItem("listItems", $("#list-items").html());
+		$(this).parent().fadeOut("slow", function() {
+			$(this).remove();
+			localStorage.setItem("listItems", $("#list-items").html());
+		});
+		
 	});
 });
