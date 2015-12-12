@@ -21,6 +21,17 @@
 			// clear values after appending
 			$("#todo-list-item").val("");	
 		};
+
+		if (item === "Study" || item === "study") {
+
+			//add gif
+			$("#list-items").append("<li><input class='checkbox' type='checkbox' />"  + "<img src='static/study.gif'>" + "<a class='remove'>x</a><hr></li>");
+
+			// persist the list data on local storage
+			localStorage.setItem("listItems", $("#list-items").html());
+			
+			$("#todo-list-item").val("");
+		};
 	});
 
 	// $(".checkbox").change(function() {
