@@ -23,7 +23,7 @@
 		};
 
 		if (item === "Study" || item === "study") {
-
+			item = $("#todo-list-item").empty();
 			//add gif
 			$("#list-items").append("<li><input class='checkbox' type='checkbox' />"  + "<img src='static/study.gif'>" + "<a class='remove'>x</a><hr></li>");
 
