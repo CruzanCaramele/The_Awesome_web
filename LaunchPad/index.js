@@ -7,7 +7,8 @@ $(document).ready(function() {
     	success:  function(response)  {
     		$.each(response.apartments, function(i, apartment) {
 
-                                      var listing = "<a href='#'' class='list-group-item'><h4 class='list-group-item-heading'></h4> <p class='list-group-item-text'></p></a>"
+                                      var listing = "<a href='#'' class='list-group-item'><h4 class='list-group-item-heading'>" + apartment.description +  "</h4> <p class='list-group-item-text'></p></a>";
+                                      $(".apartments").append(listing);
 
 
     		});
