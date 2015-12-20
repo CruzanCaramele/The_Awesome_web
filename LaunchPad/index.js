@@ -47,7 +47,7 @@ $(document).ready(function() {
                 return apartment.id == id;
               });
 
-              var 
+              var address  = selectedApartment[0].address;
 
             },
 
