@@ -25,9 +25,9 @@ $(document).ready(function() {
        $(".filter").removeClass("active");
        $(this).addClass("active");
 
-        var city = $(this).attr("id");
+       $(".listings").show();
 
-        $(".listings").show();
+        var city = $(this).attr("id");
 
         if (city !== "all") {
           $(".listings").not("." + city).css("display", "none");
