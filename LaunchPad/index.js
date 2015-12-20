@@ -21,11 +21,17 @@ $(document).ready(function() {
     });
 
     $(".filter").click(function(){
+
+       $(".filter").removeClass("active");
+       $(this).addClass("active");
+
         var city = $(this).attr("id");
 
         $(".listings").show();
 
-        $(".listings").not("." + city).css("display", "none");
+        if (city !== "all") {
+          $(".listings").not("." + city).css("display", "none");
+        }
 
     });
 });
