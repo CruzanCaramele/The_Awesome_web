@@ -49,6 +49,9 @@ $(document).ready(function() {
 
               var address  = selectedApartment[0].address;
 
+              //open address in google maps
+              window.open("http://maps.google.com/?q=" + address);
+
             },
 
                    error: function(error) {
