@@ -23,7 +23,7 @@ $(document).ready(function() {
     $(".filter").click(function(){
         var city = $(this).attr("id");
 
-        $("listings").show();
+        $(".listings").show();
 
         $(".listings").not("." + city).css("display", "none");
 
